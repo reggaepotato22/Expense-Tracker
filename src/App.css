@@ -1,0 +1,191 @@
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f2f5; 
+  color: #4a5568;
+  padding: 20px;
+}
+
+.app-container {
+  max-width: 960px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 10px; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); 
+  padding: 30px;
+}
+
+h1 {
+  color: #2d3748;
+  text-align: left;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #cbd5e0; 
+  padding-bottom: 10px;
+  font-size: 1.75rem; 
+}
+
+
+.expense-form {
+  background-color: #ffffff; 
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 1px solid #e2e8f0;
+}
+
+.expense-form h2 {
+  color: #4a5568;
+  margin-top: 0;
+  margin-bottom: 20px; 
+  font-size: 1.5rem; 
+}
+
+.expense-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #718096;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.expense-form input[type="text"],
+.expense-form input[type="number"],
+.expense-form input[type="date"] {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  margin-bottom: 20px; 
+  font-size: 1.05rem; 
+}
+
+.expense-form button {
+  background-color: #48bb78;
+  color: white;
+  padding: 12px 25px; 
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.expense-form button:hover {
+  background-color: #2f855a; /* Green when i hover my mouse */
+}
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 25px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  color: #4a5568;
+  background-color: #ffffff; 
+}
+
+.search-bar::placeholder {
+  color: #a0aec0;
+  font-size: 1rem;
+}
+
+/* Expense Table Styles */
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 25px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.expense-table thead th {
+  background-color: #edf2f7;
+  color: #4a5568; 
+  padding: 14px 18px; 
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 1.1rem; 
+}
+
+.expense-table tbody tr {
+  transition: background-color 0.1s ease-in-out;
+}
+
+.expense-table tbody tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+.expense-table tbody tr:hover {
+  background-color: #ebf8ff; 
+}
+/*when i hover my mouse*/
+
+.expense-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #4a5568;
+  font-size: 1.05rem; 
+}
+
+.expense-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.expense-form,
+.search-bar,
+.expense-table,
+h1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 768px;
+}
+
+
+
+/* Delete Button  */
+.delete-button {
+  background-color: #e53e3e;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.delete-button:hover {
+  background-color: #c53030;
+}
+
+/* Sorting Button  */
+.expense-table th button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin-left: 5px;
+  cursor: pointer;
+  color: #4a5568;
+  font-size: 1rem;
+}
+
+.expense-table th button:focus {
+  outline: none;
+}
