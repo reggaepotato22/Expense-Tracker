@@ -1,3 +1,4 @@
+
   * {
   margin: 0;
   padding: 0;
@@ -7,29 +8,48 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #f0f2f5; 
+  background-color: #ffffff; 
   color: #4a5568;
   padding: 20px;
 }
 
 .app-container {
   max-width: 960px;
-  margin: 20px auto;
-  background-color: #fff;
+  margin: auto;
+  background-color: #083D77;
   border-radius: 10px; 
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); 
-  padding: 30px;
+  padding: 40px;
+}
+
+@font-face {
+  font-family: 'RifficFree-Bold';
+  src: url('./font/RifficFree-Bold.ttf') format('truetype'); 
+  font-style: normal; 
+  font-display: swap; 
 }
 
 h1 {
-  color: #2d3748;
+  color: #fdfdfd;
   text-align: left;
   margin-bottom: 25px;
   border-bottom: 1px solid #cbd5e0; 
   padding-bottom: 10px;
   font-size: 1.75rem; 
+  font-family: 'RifficFree-Bold';
 }
 
+.logo {
+  height: 100px;
+  width: 100px; 
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+header {
+  display: flex;
+  align-items: center; /* Vertically center logo and h1 */
+}
 
 .expense-form {
   background-color: #ffffff; 

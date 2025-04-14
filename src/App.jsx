@@ -3,14 +3,38 @@ import './App.css';
 import ExpenseForm from './ExpenseForm'; 
 import ExpenseTable from './ExpenseTable'; 
 import SearchBar from './SearchBar'; 
+import logo from './image/PinClipart.com_super-star-clip-art_1103968.png';
 
 function App() {
   const initialExpenses = [
     // examples purposes 
-    { id: 1, name: 'Buy groceries', description: 'Weekly shopping', category: 'Household', amount: 50, date: '2024-04-10' },
-    { id: 2, name: 'Gas Bill', description: 'Monthly payment', category: 'Utilities', amount: 100, date: '2024-04-15' },
-    { id: 3, name: 'Buy photo', description: 'Add to my photo collection', category: 'General', amount: 200, date: '2024-04-20' },
-    { id: 4, name: 'Buy book', description: 'Add to my book collection', category: 'General', amount: 300, date: '2024-04-30' },
+    { id: 1, 
+      name: 'Buy groceries',
+      description: 'Weekly shopping', 
+      category: 'Household', 
+      amount: 50, 
+      date: '2024-04-10' },
+
+    { id: 2, 
+      name: 'Gas Bill', 
+      description: 'Monthly payment', 
+      category: 'Utilities', 
+      amount: 100, 
+      date: '2024-04-15' },
+
+    { id: 3, 
+      name: 'Buy photo', 
+      description: 'Add to my photo collection', 
+      category: 'General', 
+      amount: 200, 
+      date: '2024-04-20' },
+
+    { id: 4, 
+      name: 'Buy book', 
+      description: 'Add to my book collection', 
+      category: 'General', 
+      amount: 300, 
+      date: '2024-04-30' },
   ];
 
   const [expenses, setExpenses] = useState(initialExpenses);
@@ -56,6 +80,9 @@ function App() {
 
   return (
     <div className="app-container">
+
+        <img src={logo} alt="thumbsup Logo" className="logo" />
+
       <h1>Expense Tracker</h1>
 
       <ExpenseForm onAddExpense={addExpense} />
